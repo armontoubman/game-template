@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define flecs_STATIC
 #include <flecs.h>
 #include <raylib.h>
 

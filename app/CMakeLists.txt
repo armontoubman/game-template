@@ -1,5 +1,5 @@
 add_executable(${PROJECT_NAME} main.c)
-target_link_libraries(${PROJECT_NAME} PUBLIC flecs)
+target_link_libraries(${PROJECT_NAME} PUBLIC flecs_static)
 target_link_libraries(${PROJECT_NAME} PUBLIC raylib)
 target_link_libraries(${PROJECT_NAME} PRIVATE game_lib)
 
