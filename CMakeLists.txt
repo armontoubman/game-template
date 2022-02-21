@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22.2)
+cmake_minimum_required(VERSION 3.20.2)
 include(FetchContent)
 
 project(game VERSION 0.1.0 LANGUAGES C)
