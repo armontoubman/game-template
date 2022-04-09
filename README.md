@@ -6,8 +6,9 @@ Includes:
 
 * [raylib](https://github.com/raysan5/raylib) 4.0.0
 * [flecs](https://github.com/SanderMertens/flecs) 2.4.8
+* [stc](https://github.com/tylov/STC) 3
 
-Both are automatically downloaded and built by CMake.
+Dependencies are automatically downloaded and built by CMake.
 
 ## Building
 

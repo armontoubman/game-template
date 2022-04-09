@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.20.2)
 include(FetchContent)
 
 project(game VERSION 0.1.0 LANGUAGES C)
+set(CMAKE_C_STANDARD 11)
 
 include(CTest)
 enable_testing()
@@ -34,6 +35,14 @@ if (NOT raylib_FOUND) # If there's none, fetch and build raylib
     add_subdirectory(${raylib_SOURCE_DIR} ${raylib_BINARY_DIR})
   endif()
 endif()
+
+# stc
+FetchContent_Declare(
+  stc
+  GIT_REPOSITORY https://github.com/tylov/STC.git
+  GIT_TAG        9f1a51593ae7dd45db46f39ac18901ad175af18e # v3 from master
+)
+FetchContent_MakeAvailable(stc)
 
 add_subdirectory(app)
 add_subdirectory(src)
